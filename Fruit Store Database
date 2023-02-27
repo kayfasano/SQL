@@ -1,0 +1,18 @@
+--Create fruit store database 
+
+CREATE TABLE fruits (id INTEGER PRIMARY KEY, name text, quantity integer, aisle integer, stock integer);
+
+INSERT INTO fruits VALUES (1, "Bananas", 10, 2, 11);
+INSERT INTO fruits VALUES (2, "Pears", 2, 2, 5);
+INSERT INTO fruits VALUES (3, "Kiwi", 1, 2, 3);
+INSERT INTO fruits VALUES (4, "Oranges", 3, 2, 5);
+INSERT INTO fruits VALUES (5, "Apples", 2, 2, 4);
+
+--displayed database where quantity was > 2
+
+SELECT * FROM fruits; 
+SELECT * FROM fruits WHERE quantity > 2
+
+--Ordered database by stock number
+
+ORDER BY stock
